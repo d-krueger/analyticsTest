@@ -9,6 +9,8 @@
 
 #import "AppDelegate.h"
 
+#import "Localytics.h"
+
 #import "RCTRootView.h"
 
 @implementation AppDelegate
@@ -17,6 +19,8 @@
 {
   NSURL *jsCodeLocation;
 
+  [Localytics autoIntegrate:@"b10c7e98848a0eef6fab952-a44e052e-c9ed-11e5-651a-002dea3c3994" launchOptions:launchOptions];
+  
   /**
    * Loading JavaScript code - uncomment the one you want.
    *
